@@ -8,7 +8,7 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
     <div class="body d-flex justify-content-between">
         <h4>LIST BUKU ADMIN</h4>
         <h2>
-            <a href="../page/addBookAdminPage.php?" style="color: red;" class="fa fa-plus-square"></a>
+            <a href="../page/addBookAdminPage.php?" style="color: #555747;" class="fa fa-plus-square"></a>
         </h2>
     </div>
     <hr>
@@ -34,7 +34,7 @@ die(mysqli_error($con));
                                 <h3><?php echo $data['nama_buku'];?></h3>
                                 <h8>Available: <?php echo $data['jumlah_buku'];?></h8>
                                 <hr>
-                                <a href="../page/editBookAdminPage.php?id=<?php echo $data['id_buku'] ; ?>" class="btn btn-danger" onClick="return alert (\'Are you sure want to edit this data?\')">Details</a>
+                                <a href="../page/editBookAdminPage.php?id=<?php echo $data['id_buku'] ; ?>" class="btn btn-dark" onClick="return alert (\'Are you sure want to edit this data?\')">Details</a>
                                 <a href="../process/deleteBookAdminProcess.php?id=<?php echo $data['id_buku'] ; ?>"onClick="return confirm ( \'Are you sure want to delete this data?\')"><i style="color: red" class="fa fa-trash fa-2x"></i> </a>
                             </div>
                         </div>

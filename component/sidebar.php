@@ -29,7 +29,7 @@
 
                 .side-bar {
                     width: 260px;
-                    background-color: #D40013;
+                    background-color: #5b5e4e;
                     min-height: 100vh;
                 }
 
@@ -37,7 +37,7 @@
                 padding-left: 10px;
                 font-size: 13px;
                 text-decoration: none;
-                color: white;
+                color: #f1eee8;
                 }
 
                 .menu i {
@@ -63,7 +63,7 @@
         <aside >
         <div class="d-flex">
         <div class="side-bar">
-        <h2 class="text-light text-center pt-2">PHP</h2>
+        <h2 class="text-light text-center pt-2">MyPerpus.</h2>
         <hr>
             <div class="menu">
             <div class="content-menu" >

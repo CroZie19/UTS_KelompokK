@@ -33,7 +33,9 @@ die(mysqli_error($con));
                             <div class="col-md-9">
                                 <h3><?php echo $data['nama_buku'];?></h3>
                                 <h8>Available: <?php echo $data['jumlah_buku'];?></h8>
+                                <hr>
                                 <a href="../page/editBookAdminPage.php?id=<?php echo $data['id_buku'] ; ?>" class="btn btn-danger" onClick="return alert (\'Are you sure want to edit this data?\')">Details</a>
+                                <a href="../process/deleteBookAdminProcess.php?id=<?php echo $data['id_buku'] ; ?>"onClick="return confirm ( \'Are you sure want to delete this data?\')"><i style="color: red" class="fa fa-trash fa-2x"></i> </a>
                             </div>
                         </div>
 

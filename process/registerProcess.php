@@ -13,7 +13,7 @@
         $email = $_POST['email'];
         $name = $_POST['name'];
 
-        $select = mysqli_querry($con, "SELECT * FROM users where email = '$email' ") or die(mysqli_error($con));
+        $select = mysqli_query($con, "SELECT * FROM users where email = '$email' ") or die(mysqli_error($con));
         if(mysqli_num_rows($select)){
             //kalau email ketemu sama tampilkan error
             echo

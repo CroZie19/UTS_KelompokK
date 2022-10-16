@@ -12,52 +12,46 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
         </h2>
     </div>
     <hr>
-        <table class="table">
         <thead>
-            <tr>
-                <th scope="col">Book Id</th>
-                <th scope="col">Book Name</th>
-                <th scope="col">Photo</th>
-                <th scope="col">Book Amount</th>
-            </tr>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="col-md-8 mt-4">
+                        <div class="col-md-12"> 
+                        <?php
+                            $query = mysqli_query($con, "SELECT * FROM buku") or
+die(mysqli_error($con));
+                        if (mysqli_num_rows($query) == 0) {
+                            echo '<tr> <td colspan="6"> Tidak ada data </td> </tr>';
+                        }else{
+                            while($data = mysqli_fetch_assoc($query)){
+                        ?>
+
+                        <div class="col-md-12 row mb-5">
+                            <div class="col-md-3">
+                                <img src="../gambar_buku/<?php echo $data['gambar_buku']; ?>" style="width: 110%">
+                            </div>
+                            <div class="col-md-9">
+                                <h3><?php echo $data['nama_buku'];?></h3>
+                                <h8>Available: <?php echo $data['jumlah_buku'];?></h8>
+                                <a href="../page/editBookAdminPage.php?id=<?php echo $data['id_buku'] ; ?>" class="btn btn-danger" onClick="return alert (\'Are you sure want to edit this data?\')">Details</a>
+                            </div>
+                        </div>
+
+                        <?php 
+                            }
+                        }
+                        ?>
+
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+            
         </thead>
         <tbody>
-            <?php
-            $query = mysqli_query($con, "SELECT * FROM buku") or
-die(mysqli_error($con));
-
-        if (mysqli_num_rows($query) == 0) {
-            echo '<tr> <td colspan="6"> Tidak ada data </td> </tr>';
-        }else{
-            while($data = mysqli_fetch_assoc($query)){
-                // if ($data['jumlah_buku'] <= 0){
-                //     $disabled = 'disabled';
-                // } else {
-                //     $disabled = '';
-                // }
-                echo'
-                <tr>
-                    <td>'.$data['id_buku'].'</td>
-                    <td>'.$data['nama_buku'].'</td>
-                    <td> <img src="../gambar_buku/'. $data['gambar_buku']. '" width="100px"> </td>
-                    <td>'.$data['jumlah_buku'].'</td>
-                    <td>
-                    <a href="../page/editBookAdminPage.php?id='.$data['id_buku'].'"
-onClick="return alert ( \'Are you sure want to edit this
-data?\')">                        <i style="color: green" class="fa fa-edit fa-2x"></i>
-                    </a>
-                    <a href="../process/deleteBookAdminProcess.php?id='.$data['id_buku'].'"
-onClick="return confirm ( \'Are you sure want to delete this
-data?\')">                        <i style="color: red" class="fa fa-trash fa-2x"></i>
-                    </a>
-                    
-                </td>
-            </tr>'; 
-            }
-        }
-        ?>
+            
         </tbody>
-    </table>
 </div>
 </aside>
 <script>

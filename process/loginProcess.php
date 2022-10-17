@@ -14,34 +14,47 @@ die(mysqli_error($con));
     if(mysqli_num_rows($query) == 0){
         echo
         '<script>
-            alert("Email not found!"); window.location = "../page/loginPage.php"
+            alert("Email not found!"); window.location = "../index.php"
         </script>';
     }else{
         $users = mysqli_fetch_assoc($query);
-        if(password_verify($password, $users['password'])){
-            // session adalah variabel global sementara yang disimpen di server
-            // buat mulai sessionnya pake session_start()
-            session_start();
-            //isLogin ini temp variable yang gunanya buat ngecek nanti apakah sdh login ato belum
-            $_SESSION['isLogin'] = true;
-            $_SESSION['users'] = $users;
-            $_SESSION['email'] = $email;
-            echo
-            '<script>
-                alert("Login Success"); window.location = "../page/dashboardUserPage.php"
-            </script>';
-    }else {
-        echo
-            '<script>
-                alert("Email or Password Invalid");
-                window.location = "../page/loginPage.php"
-            </script>';
-          }
+        if ($email == 'admin'){
+            if($password == $users['password']){
+                session_start();
+                $_SESSION['isLogin'] = true;
+                $_SESSION['users'] = $users;
+                echo
+                '<script>
+                    alert("Login Success"); window.location = "../page/listBookAdminPage.php"
+                </script>';
+            }else {
+                echo
+                    '<script>
+                        alert("Email or Password Invalid");
+                        window.location = "../page/loginPage.php"
+                    </script>';
+            }
+        }else{
+            if(password_verify($password, $users['password'])){
+                session_start();
+                $_SESSION['isLogin'] = true;
+                $_SESSION['users'] = $users;
+                echo
+                '<script>
+                    alert("Login Success"); window.location = "../page/listBookAdminPage.php"
+                </script>';
+            }else {
+                echo
+                '<script>
+                    alert("Email or Password Invalid"); window.location = "../index.php"
+                </script>';
+            }
         }
-    }else{
-        echo
-            '<script>
-                window.history.back()
-            </script>';
     }
+}else{
+    echo
+    '<script>
+    window.history.back()
+    </script>';
+}
 ?>

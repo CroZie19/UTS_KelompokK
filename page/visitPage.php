@@ -19,7 +19,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                 <div class="mb-3">
                     <label for="genre" class="form-label">Sesi</label>
                     <select class="form-select" aria-label="Default select example" name="sesi" id="sesi">
-                    <option value="" disabled selected hidden>Select Sesi</option>
+                    <option value="" disabled selected hidden>Pilih Sesi</option>
                         <option value="Sesi 1 (08.00-10.30)">Sesi 1 (08.00-10.30)</option>
                         <option value="Sesi 2 (11.00-13.30)">Sesi 2 (11.00-13.30)</option>
                         <option value="Sesi 3 (14.00-16.30)">Sesi 3 (14.00-16.30)</option>

@@ -11,11 +11,14 @@ $password = $users['password'];
 $sql = mysqli_query($con,"SELECT * FROM users WHERE id = $id");
 $data = mysqli_fetch_assoc($sql);
 ?>
-<div class="container p-3 m-4 h-100" style="background-color: #FFFFFF; border-top: 5px 
-solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 
-0.19);">
+    <div class="container p-3 m-4 h-100" style="background-color: #f1eee8; border-top: 5px
+solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+0.19);" >   
     <div class="body d-flex justify-content-between">
-        <h4>EDIT PROFILE PAGE</h4>
+        <h4>EDIT PROFILE USER</h4>
+        <h3>
+            <a href="../page/profilePage.php?" style="color: #555747;" class="fa fa-arrow-left"></a>
+        </h3>
     </div>
     <hr>
     <form action="../process/editProfileProcess.php" method="post" enctype="multipart/form-data">
@@ -43,7 +46,7 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                             <input class="form-control" id="nama" name="nama" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["nama"]; ?>">
                         </div>
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary" name="edit">Edit</button>
+                            <button type="submit" class="btn btn-dark" name="edit">Edit Profil User</button>
                         </div>
                     </form>
 </aside>

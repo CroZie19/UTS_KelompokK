@@ -41,7 +41,7 @@ die(mysqli_error($con));
                 $_SESSION['users'] = $users;
                 echo
                 '<script>
-                    alert("Login Success"); window.location = "../page/listBookAdminPage.php"
+                    alert("Login Success"); window.location = "../page/dashboardUserPage.php"
                 </script>';
             }else {
                 echo

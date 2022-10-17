@@ -57,8 +57,7 @@
                 }
             }
         }
-    }
-}else{
+    }else{
     echo
     '<script>
     window.history.back()

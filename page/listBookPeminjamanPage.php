@@ -34,7 +34,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                         <th scope="row">'.$no.'</th>
                         <td>'.$data['nama_buku'].'</td>
                         <td>
-                            <img src="../gambar_buku/'.$data['gambar'].'" style="width: 110%">
+                            <img src="../gambar_buku/'.$data['gambar'].'" style="width: 20%">
                         </td>
                         <td>'
                         ?>

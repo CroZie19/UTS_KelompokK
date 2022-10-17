@@ -1,11 +1,14 @@
 <?php
-    include '../component/sidebar.php'
+    include '../component/sidebarUser.php'
 ?> 
 <div class="container p-3 m-4 h-100" style="background-color: #f1eee8; border-top: 5px
 solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
 0.19);" >
     <div class="body d-flex justify-content-between" >
-        <h4>LIST REQUEST BOOK</h4>
+        <h4>LIST REQUEST BUKU USER</h4>
+        <h4>
+            <a href="../page/requestPage.php?" style="color: #555747;" class="fa fa-plus"> Tambah Buku</a>
+        </h4>
         
     </div>
     <hr>
@@ -34,6 +37,12 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                         <td>'.$data['nama_buku'].'</td>
                         <td>'.$data['penulis'].'</td>
                         <td>'.$data['tahun_rilis'].'</td>
+                        <td>
+                        <a href="../page/editRequestPage.php?id='.$data['id'].'" onClick="return confirm ( \'Apakah mau diedit?\')">                      
+                        <i style="color: #555747" class="fa fa-edit fa-2x"></i></a>
+                        <a href="../process/deleteRequestProcess.php?id='.$data['id'].'" onClick="return confirm ( \'Apakah mau dihapus?\')">                      
+                        <i style="color: red" class="fa fa-trash fa-2x"></i></a>
+                        </td>
                     </tr>';
                     $no++;
                 }

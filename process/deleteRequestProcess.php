@@ -9,12 +9,12 @@
         if($queryDelete){
             echo
             '<script>
-            alert("Request Berhasil Dihapus"); window.location = "../page/listRequestPage.php"
+            alert("Request Berhasil Dihapus"); window.location = "../page/listRequestUserPage.php"
             </script>';
         }else{
             echo
                 '<script>
-                alert("Hapus Failed"); window.location = "../page/listRequestPage.php"
+                alert("Hapus Failed"); window.location = "../page/listRequestUserPage.php"
                 </script>';
         }
     }else {

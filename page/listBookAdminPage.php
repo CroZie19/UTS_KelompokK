@@ -7,9 +7,9 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
 
     <div class="body d-flex justify-content-between">
         <h4>LIST BUKU ADMIN</h4>
-        <h3>
+        <h4>
             <a href="../page/addBookAdminPage.php?" style="color: #555747;" class="fa fa-plus"> Add Book</a>
-        </h3>
+        </h4>
     </div>
     <hr>
         <thead>

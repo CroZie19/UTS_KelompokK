@@ -18,7 +18,7 @@ if(isset($_POST['request'])){
         echo
             '<script>
             alert("Request Success");
-            window.location = "../page/requestPage.php"
+            window.location = "../page/listRequestUserPage.php"
             </script>';
     }else{
         echo

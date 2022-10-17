@@ -57,10 +57,11 @@
                 }
             }
         }
-    }else{
-        echo
-            '<script>
-                window.history.back()
-            </script>';
     }
+}else{
+    echo
+    '<script>
+    window.history.back()
+    </script>';
+}
 ?>

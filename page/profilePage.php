@@ -1,8 +1,11 @@
 <?php
     
     include '../component/sidebarUser.php';
-
+    
     $users = $_SESSION['users'];
+    $id = $users['id'];
+    $foto = $users ['foto'];
+    $username = $users['username'];
     $nama = $users['nama'];
     $email = $users['email'];
     $password = $users['password'];
@@ -17,8 +20,13 @@
           <div class="row g-0">
             <div class="col-md-4 gradient-custom text-center text-white"
               style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
-              <img src="../foto/<?php echo $_SESSION['foto']; ?>" style="width: 110%">
-              <i class="far fa-edit mb-5"></i>
+              <img src="../foto/<?php echo $_SESSION["users"]["foto"]; ?>" style = "width:100%">
+            </div>
+            <div class="col-md-8">
+              <a href="../page/editProfilePage.php?id='<?php echo $_SESSION["users"]["foto"]; ?>'" onClick="return 
+                        confirm ( \'Are you sure want to edit this data?\')">
+                        <i style="color: blue" class="fa fa-edit fa-2x"></i>
+                        </a>
             </div>
             <div class="col-md-8">
               <div class="card-body p-4">
@@ -38,11 +46,6 @@
                     <?php echo $_SESSION["users"]["nama"] ?></p>
                   </div>
                 </div>
-                <div class="d-flex justify-content-start">
-                  <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
-                  <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
-                  <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-                </div>
               </div>
             </div>
           </div>
@@ -50,4 +53,7 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </section>

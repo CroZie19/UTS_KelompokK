@@ -17,14 +17,14 @@ die(mysqli_error($con));
             alert("Email not found!"); window.location = "../page/loginPage.php"
         </script>';
     }else{
-        $user = mysqli_fetch_assoc($query);
-        if(password_verify($password, $user['password'])){
+        $users = mysqli_fetch_assoc($query);
+        if(password_verify($password, $users['password'])){
             // session adalah variabel global sementara yang disimpen di server
             // buat mulai sessionnya pake session_start()
             session_start();
             //isLogin ini temp variable yang gunanya buat ngecek nanti apakah sdh login ato belum
             $_SESSION['isLogin'] = true;
-            $_SESSION['user'] = $user;
+            $_SESSION['users'] = $users;
             echo
             '<script>
                 alert("Login Success"); window.location = "../page/dashboardUserPage.php"

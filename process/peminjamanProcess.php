@@ -1,18 +1,18 @@
 <?php
 session_start();
-if (isset($_POST['add'])) {
+if (isset($_GET['id'])) {
     include('../db.php'); 
     $user_login = $_SESSION['user']; 
     $id_user = $user_login['id'];
     
-    $id_buku = $_POST['id']; 
-    $date = date('Y-m-d',strtotime("+7 days"));
+    $id_buku = $_GET['id']; 
+    $date = date('Y-m-d' ,strtotime("+7 days"));
 
     
     $query = mysqli_query($con,
-            "INSERT INTO peminjaman(id_user, id_buku, status, tanggal_pengembalian)
+            "INSERT INTO peminjaman(id_user, id_buku, tanggal_pengembalian, status)
             VALUES
-            ('$id_user', '$id_buku', 'Dipinjam', '$date')") or die(mysqli_error($con)); 
+            ('$id_user', '$id_buku', '$date', '0' )") or die(mysqli_error($con)); 
     if($query){
         $query2 = mysqli_query($con, "SELECT * FROM buku WHERE id_buku=$id_buku") or die(mysqli_error($con));
                 $data = mysqli_fetch_assoc($query2);

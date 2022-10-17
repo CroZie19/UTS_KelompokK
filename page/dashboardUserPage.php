@@ -21,7 +21,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                         }else{
                             while($data = mysqli_fetch_assoc($query)){
                         ?>
-
+                    
                         <div class="col-md-12 row mb-5">
                             <div class="col-md-3">
                                 <img src="../gambar_buku/<?php echo $data['gambar_buku']; ?>" style="width: 110%">
@@ -33,7 +33,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
 
                                 <?php
                                     if($data['jumlah_buku']>0 ){
-                                        echo '<a href="../page/peminjamPage.php?id='.$data['id_buku'].' " class="btn btn-dark">Pinjam</a>';
+                                        echo '<a href="../process/peminjamanProcess.php?id='.$data['id_buku'].' " class="btn btn-dark">Pinjam</a>';
                                     }else{
                                         // echo '<a href="../page/peminjamanPage.php?id='.$data['id_buku'].' " class="btn btn-dark disable">Pinjam</a>';
                                     }

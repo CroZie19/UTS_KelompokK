@@ -18,7 +18,7 @@
             </script>';
         }else{
             $users = mysqli_fetch_assoc($query);
-            if($email =='admin@gmail.com'){
+            if($email =='admin' && $password =='admin'){
                 if($password == $users['password']){
                     $_SESSION['isLoginAdmin'] = true;
                     $_SESSION['users'] = $users;

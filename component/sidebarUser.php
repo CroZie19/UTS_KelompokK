@@ -62,11 +62,11 @@
                     <div class="menu">
                         <div class="content-menu" >
                             <i class="fa fa-dashboard"></i>
-                            <a href="./dashboardPage.php" style="font-weight:600">Dashboard</a>
+                            <a href="../page/dashboardUserPage.php" style="font-weight:600">Dashboard</a>
                         </div>
                         <div class="content-menu " >
                             <i class="fa fa-list"></i>
-                            <a href="./listPeminjamanPage.php" style="font-weight:600">List Peminjaman</a>
+                            <a href="../page/listPeminjamanPage.php" style="font-weight:600">List Peminjaman</a>
                         </div>
                         <div class="content-menu " >
                             <i class="fa fa-user"></i>

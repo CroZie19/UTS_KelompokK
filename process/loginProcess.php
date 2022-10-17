@@ -27,7 +27,7 @@ die(mysqli_error($con));
             $_SESSION['user'] = $user;
             echo
             '<script>
-                alert("Login Success"); window.location = "../page/dashboardPage.php"
+                alert("Login Success"); window.location = "../page/dashboardUserPage.php"
             </script>';
     }else {
         echo

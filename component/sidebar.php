@@ -66,22 +66,17 @@
         <h2 class="text-light text-center pt-2">MyPerpus.</h2>
         <hr>
             <div class="menu">
-            <div class="content-menu" >
+            <div class="content-menu " >
                 <i class="fa fa-dashboard"></i>
-                <a href="./dashboardPage.php" style="font-weight:600" 
-                >Dashboard</a>
-            </div>
-            <div class="content-menu " >
-                <i class="fa fa-film"></i>
-                <a href="./listMoviesPage.php" style="font-weight:600">List Movie</a>
-            </div>
-            <div class="content-menu " >
-                <i class="fa fa-series"></i>
-                <a href="./listSeriesPage.php" style="font-weight:600">List Series</a>
+                <a href="./listBookAdminPage.php" style="font-weight:600">Dashboard Admin</a>
             </div>
             <div class="content-menu " >
                 <i class="fa fa-tv"></i>
                 <a href="./listBookPeminjamanPage.php" style="font-weight:600">List Peminjaman</a>
+            </div>
+            <div class="content-menu " >
+                <i class="fa fa-tv"></i>
+                <a href="./requestPage.php" style="font-weight:600">List Request</a>
             </div>
             <div class="content-menu " >
                 <i class="fa fa-sign-out"></i>

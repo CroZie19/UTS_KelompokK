@@ -4,9 +4,9 @@
     $query = mysqli_query($con, "SELECT * FROM buku WHERE id_buku = '$id'");
     while($d = mysqli_fetch_array($query)){
 ?>
-    <div class="container p-3 m-4 h-100" style="background-color: #FFFFFF; border-top: 5px
-solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
-0.19);">
+    <div class="container p-3 m-4 h-100" style="background-color: #f1eee8; border-top: 5px
+solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+0.19);" >
 
     <div class="body d-flex justify-content-between">
         <h4>EDIT BUKU ADMIN</h4>

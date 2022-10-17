@@ -55,7 +55,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                         ?>
                         <?php
                             if($data['status']){
-                                echo "";
+                                echo '<a href="../process/deletePeminjamanProcess.php?id='.$data['id'].'" onClick="return confirm ( \'Apakah mau dihapus?\')">                      <i style="color: red" class="fa fa-trash fa-2x"></i></a>';
                             }else{
                                 echo '<a href="../process/pengembalianProcess.php?id='.$data['id'].'" onClick="return confirm ( \'Apakah mau dikembaikan?\')">                      <i style="color: red" class="fa fa-reply fa-2x"></i></a>';
                             }

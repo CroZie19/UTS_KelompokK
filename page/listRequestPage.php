@@ -16,6 +16,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                 <th scope="col">Nama Buku</th>
                 <th scope="col">Penulis</th>
                 <th scope="col">Tahun Rilis</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
@@ -33,6 +34,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                         <td>'.$data['nama_buku'].'</td>
                         <td>'.$data['penulis'].'</td>
                         <td>'.$data['tahun_rilis'].'</td>
+                        <td><a href="../process/deleteRequestProcess.php?id='.$data['id'].'" onClick="return confirm ( \'Apakah mau dihapus?\')">                      <i style="color: red" class="fa fa-trash fa-2x"></i></a></td>
                     </tr>';
                     $no++;
                 }

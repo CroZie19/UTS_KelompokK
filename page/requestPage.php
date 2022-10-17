@@ -25,7 +25,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                     <input class="form-control" id="tahun" name="tahun">
                 </div>
                 <div class="d-grid gap-2">
-                    <button style="background-color: blue;" type="submit" class="btn btn-dark" name="request">Request</button>
+                    <button type="submit" class="btn btn-dark" name="request">Request</button>
                 </div>
             </div>
         </table>

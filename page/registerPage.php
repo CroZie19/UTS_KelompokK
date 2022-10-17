@@ -25,7 +25,7 @@ EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="a
 25rem;">
                 <div class="card-header fw-bold">Register</div>
                 <div class="card-body">
-                    <form action="../process/registerProcess.php" method="post">
+                    <form action="../process/registerProcess.php" method="post" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Foto</label>
                             <input class="form-control" type="file" id="foto" name="foto">
@@ -44,7 +44,7 @@ EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="a
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Name</label>
-                            <input class="form-control" id="name" name="name" aria-describedby="emailHelp">
+                            <input class="form-control" id="nama" name="nama" aria-describedby="emailHelp">
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary" name="register">Register</button>

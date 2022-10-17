@@ -2,8 +2,10 @@
 session_start();
 if (isset($_GET['id'])) {
     include('../db.php'); 
-    $user_login = $_SESSION['user']; 
-    $id_user = $user_login['id'];
+    $email = $_SESSION['email'];
+    $query = mysqli_query($con, "SELECT * FROM users WHERE email = '$email'") or die(mysqli_error($con));
+    $user = mysqli_fetch_assoc($query);
+    $id_user = $user['id'];
     
     $id_buku = $_GET['id']; 
     $date = date('Y-m-d' ,strtotime("+7 days"));

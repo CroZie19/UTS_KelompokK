@@ -25,6 +25,7 @@ die(mysqli_error($con));
             //isLogin ini temp variable yang gunanya buat ngecek nanti apakah sdh login ato belum
             $_SESSION['isLogin'] = true;
             $_SESSION['users'] = $users;
+            $_SESSION['email'] = $email;
             echo
             '<script>
                 alert("Login Success"); window.location = "../page/dashboardUserPage.php"

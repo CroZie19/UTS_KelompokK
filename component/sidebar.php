@@ -78,7 +78,11 @@
             </div>
             <div class="content-menu " >
                 <i class="fa fa-tv"></i>
-                <a href="./requestPage.php" style="font-weight:600">List Request</a>
+                <a href="./listRequestPage.php" style="font-weight:600">List Request</a>
+            </div>
+            <div class="content-menu " >
+                <i class="fa fa-tv"></i>
+                <a href="./listVisitPage.php" style="font-weight:600">List Kunjungan</a>
             </div>
             <div class="content-menu " >
                 <i class="fa fa-sign-out"></i>

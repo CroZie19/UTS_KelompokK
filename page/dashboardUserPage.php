@@ -32,10 +32,10 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                                 <hr>
 
                                 <?php
-                                    if($data['jumlah_buku']> 0){
-                                        echo '<a href="../page/peminjamanPage.php?id='.$data['id_buku'].' " class="btn btn-dark">Pinjam</a>';
+                                    if($data['jumlah_buku']>0 ){
+                                        echo '<a href="../page/peminjamPage.php?id='.$data['id_buku'].' " class="btn btn-dark">Pinjam</a>';
                                     }else{
-                                        echo '<a href="../page/peminjamanPage.php?id='.$data['id_buku'].' " class="btn btn-dark disable">Pinjam</a>';
+                                        // echo '<a href="../page/peminjamanPage.php?id='.$data['id_buku'].' " class="btn btn-dark disable">Pinjam</a>';
                                     }
                                 ?>
                             </div>

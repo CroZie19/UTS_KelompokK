@@ -77,6 +77,14 @@
                     <a href="../page/listPeminjamanPage.php" style="font-weight:600">List Peminjaman</a>
                 </div>
                 <div class="content-menu " >
+                    <i class="fa fa-list"></i>
+                    <a href="../page/requestPage.php" style="font-weight:600">Request Book</a>
+                </div>
+                <div class="content-menu " >
+                    <i class="fa fa-list"></i>
+                    <a href="../page/visitPage.php" style="font-weight:600">Kunjungan</a>
+                </div>
+                <div class="content-menu " >
                     <i class="fa fa-user"></i>
                     <a href="../page/profilePage.php" style="font-weight:600">Profile</a>
                 </div>

@@ -20,12 +20,12 @@ if (isset($_POST['add'])) {
         $query3 = mysqli_query($con, "UPDATE buku SET jumlah_buku ='$jumlah' WHERE id_buku = $id_buku") or die(mysqli_error($con)); 
         echo
         '<script>
-        alert("Peminjaman Success"); window.location = "../page/listBookAdminPage.php"
+        alert("Peminjaman Success"); window.location = "../page/dashboardUserPage.php"
         </script>';
     }else{
         echo
         '<script>
-        alert("Peminjaman Failed"); window.location = "../page/listBookAdminPage.php"
+        alert("Peminjaman Failed"); window.location = "../page/dashboardUserPage.php"
         </script>';
     }
         

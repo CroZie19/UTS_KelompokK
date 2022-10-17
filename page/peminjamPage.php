@@ -1,12 +1,12 @@
 <?php
     include '../component/sidebarUser.php'
 ?>
-<div class="container p-3 m-4 h-100" style="background-color: black; border-top: 5px 
-solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 
-0.19);color: #f6ce59;" >
+<div class="container p-3 m-4 h-100" style="background-color: #f1eee8; border-top: 5px
+solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+0.19);" >
         
     <div class="countainer card-content w-50">
-        <h4>Loan Page</h4>
+        <h4>Peminjaman Page</h4>
         <?php
             if (isset($_GET['id'])) {
                 $id = $_GET['id'];
@@ -19,7 +19,7 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                     while($data = mysqli_fetch_assoc($data_buku)){
                         echo' 
                             <table>
-                                <form action="../process/loanProcess.php" method="post">
+                                <form action="../process/peminjamanProcess.php" method="post">
                                 <input hidden type="text" id="id" name="id" value="' . $data['id_buku'] . '"/>   
                                 <tr>
                                     <td>
@@ -40,7 +40,7 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                                 </tr>
                                 <tr>
                                     <td>
-                                        <button type="submit" class="btn btn-primary" name="add">Add</button>
+                                        <button type="submit" class="btn btn-dark" name="add">Add</button>
                                     </td>
                                 </tr>  
                                 </form>	

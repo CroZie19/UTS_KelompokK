@@ -24,7 +24,8 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
         </thead>
         <tbody>
             <?php
-            $query = mysqli_query($con, "SELECT * FROM request") or die(mysqli_error($con));
+            $email = $_SESSION['email'];
+            $query = mysqli_query($con, "SELECT r.id, r.nama_buku, r.penulis, r.tahun_rilis FROM request r join users u on (r.id_user = u.id) WHERE u.email = '$email'") or die(mysqli_error($con));
 
             if (mysqli_num_rows($query) == 0) {
                 echo '<tr> <td align="center" colspan="6"> Tidak ada data </td> </tr>';

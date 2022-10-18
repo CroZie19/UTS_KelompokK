@@ -12,9 +12,8 @@
 
 <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <!-- Nama : nama panggilan kalian -->
-            <a class="navbar-brand fw-bold" href="/gd4_c_0820">PHP - UTS_KelompokK</a>
+        <div class="container" >
+            <a class="navbar-brand fw-bold" href="/uts_kelompokk">MyPerpus!</a>
         </div>
     </nav>
     <div class="bg bg-light text-dark">

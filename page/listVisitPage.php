@@ -5,7 +5,7 @@
 solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
 0.19);" >
     <div class="body d-flex justify-content-between" >
-        <h4>LIST KUNJUNGAN PERPUSTAKAAN</h4>
+        <h4>List Kunjungan Perpustakaan</h4>
         
     </div>
     <hr>

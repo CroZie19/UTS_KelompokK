@@ -6,7 +6,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
 0.19);" >
 
     <div class="body d-flex justify-content-between">
-        <h4>ADD BOOK ADMIN</h4>
+        <h4>Tambah Buku Admin</h4>
         <h3>
             <a href="../page/listBookAdminPage.php?" style="color: #555747;" class="fa fa-arrow-left"></a>
         </h3>
@@ -16,19 +16,19 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
             <div class="card-body">
             <form action="../process/addBookAdminProcess.php" method="post" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label for="name" class="form-label">Book Name</label>
+                    <label for="name" class="form-label">Nama Buku</label>
                     <input class="form-control" id="nama_buku" name="nama_buku">
                 </div>
                 <div class="mb-3">
-                    <label for="photo" class="form-label">Photo</label>
+                    <label for="photo" class="form-label">Sampul Buku</label>
                     <input class="form-control" type="file" id="photo" name="gambar_buku">
                 </div>
                 <div class="mb-3">
-                    <label for="amount" class="form-label">Book Amount</label>
+                    <label for="amount" class="form-label">Jumlah Tersedia</label>
                     <input class="form-control" id="jumlah_buku" name="jumlah_buku">
                 </div>
                 <div class="d-grid gap-2">
-                    <button style="background-color: black;" type="submit" class="btn btn-primary" name="add">Add Book Admin</button>
+                    <button style="background-color: black;" type="submit" class="btn btn-primary" name="add">Tambah Buku Admin</button>
                 </div>
             </div>
 

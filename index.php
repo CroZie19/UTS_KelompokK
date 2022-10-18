@@ -13,25 +13,24 @@ EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="a
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-dark fixed-top">
         <div class="container">
-            <!-- Nama : nama panggilan kalian -->
-            <a class="navbar-brand fw-bold" href="/gd4_c_0820">PHP - UTS_Kelompok K</a>
+            <a class="navbar-brand fw-bold" href="/uts_kelompokk"></a>
             <div class="d-flex justify-content-end">
-                <button class="btn btn-primary me-2" type="button">
+                <button class="btn btn-dark me-2" type="button">
                     <a class="text-light" style="text-decoration: none" href="./page/registerPage.php">Sign Up</a>
                 </button>
-                <button class="btn btn-warning ms-2" type="button" href="./loginPage.php">
+                <button class="btn btn-dark ms-2" type="button" href="./loginPage.php">
                     <a class="text-light" style="text-decoration: none" href="./page/loginPage.php">Login</a>
                 </button>
             </div>
-        </div>
+        </div>  
     </nav>
     <div class="bg">
         <div class="container min-vh-100 d-flex align-items-center">
             <div class="pt-5 mt-4">
-                <h2 class="text-center align-middle text-white"><b class="bg-dark">
-                        Welcome To Library Kelompok K</b></h2>
+                <h2 class="text-center align-middle text-white"><b>
+                        Welcome to MyPerpus!</b></h2>
             </div>
         </div>
     </div>

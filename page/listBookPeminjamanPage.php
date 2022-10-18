@@ -5,7 +5,7 @@
 solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
 0.19);" >
     <div class="body d-flex justify-content-between" >
-        <h4>LIST PEMINJAMAN USER</h4>
+        <h4>List Peminjaman Buku User</h4>
         
     </div>
     <hr>
@@ -14,7 +14,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
             <tr>
                 <th scope="col">No</th>
                 <th scope="col">Nama Buku</th>
-                <th scope="col">Gambar</th>
+                <th scope="col">Sampul Buku</th>
                 <th scope="col">Status</th>
                 <th scope="col">Tanggal Pengembalian</th>
                 <th scope="col">Email User</th>

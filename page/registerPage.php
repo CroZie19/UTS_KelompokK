@@ -16,14 +16,12 @@ EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="a
 <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container">
-            <!-- Nama : nama panggilan kalian -->
-            <a class="navbar-brand fw-bold" href="/gd4_c_0820">PHP - Willy</a>
+            <a class="navbar-brand fw-bold" href="/uts_kelompokk">MyPerpus.</a>
         </div>
     </nav>
     <div class="bg bg-light text-dark">
         <div class="container min-vh-100 mt-5 d-flex align-items-center justify-content-center">
-            <div class="card text-white bg-dark ma-5 shadow " style="min-width: 
-25rem;">
+            <div class="card text-white bg-dark ma-5 shadow " style="min-width: 25rem;">
                 <div class="card-header fw-bold">Register</div>
                 <div class="card-body">
                     <form action="../process/registerProcess.php" method="post" enctype="multipart/form-data">

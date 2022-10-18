@@ -21,17 +21,17 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                 <div class="mb-3">
                     <label for="nama_buku" class="form-label">Book Name</label>
                     <input type="hidden" name="id_buku" value="<?php echo $d['id_buku']; ?>">
-                    <input class="form-control" id="nama_buku" name="nama_buku" value="<?php echo $d['nama_buku']; ?>">
+                    <input class="form-control" id="nama_buku" name="nama_buku" value="<?php echo $d['nama_buku'];?>" required>
                 </div>
                 <div class="mb-3">
                     <label for="gambar_buku" class="form-label">Photo</label>
                     <br>
                     <img src="../gambar_buku/<?php echo $d['gambar_buku']; ?>" width="300px" />
-                    <input class="form-control" type="file" id="gambar_buku" name="gambar_buku" value="<?php echo $d['gambar_buku']; ?>">
+                    <input class="form-control" type="file" id="gambar_buku" name="gambar_buku" value="<?php echo $d['gambar_buku']; ?>" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Book Amount</label>
-                    <input class="form-control" id="jumlah_buku" name="jumlah_buku" value="<?php echo $d['jumlah_buku']; ?>" >
+                    <input class="form-control" id="jumlah_buku" name="jumlah_buku" value="<?php echo $d['jumlah_buku']; ?>" required>
                 </div>
                 </div>
                 <div class="d-grid gap-2">

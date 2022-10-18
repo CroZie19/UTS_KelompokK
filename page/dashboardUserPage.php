@@ -6,7 +6,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
 0.19);" >
 
     <div class="body d-flex justify-content-between">
-        <h4>LIST BUKU</h4>
+        <h4>Daftar List Buku MyPerpus</h4>
     </div>
     <hr>
         <thead>
@@ -28,12 +28,12 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                             </div>
                             <div class="col-md-9">
                                 <h3><?php echo $data['nama_buku'];?></h3>
-                                <h8>Available: <?php echo $data['jumlah_buku'];?></h8>
+                                <h8>Tersedia: <?php echo $data['jumlah_buku'];?></h8>
                                 <hr>
 
                                 <?php
                                     if($data['jumlah_buku']>0 ){
-                                        echo '<a href="../process/peminjamanProcess.php?id='.$data['id_buku'].' " class="btn btn-dark">Pinjam</a>';
+                                        echo '<a href="../process/peminjamanProcess.php?id='.$data['id_buku'].' " class="btn btn-dark">Pinjam Buku</a>';
                                     }else{
                                         // echo '<a href="../page/peminjamanPage.php?id='.$data['id_buku'].' " class="btn btn-dark disable">Pinjam</a>';
                                     }

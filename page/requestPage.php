@@ -18,15 +18,15 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
             <form action="../process/requestProcess.php" method="post" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama Buku</label>
-                    <input class="form-control" id="nama" name="nama">
+                    <input class="form-control" id="nama" name="nama" required>
                 </div>
                 <div class="mb-3">
                     <label for="penulis" class="form-label">Penulis</label>
-                    <input class="form-control" id="penulis" name="penulis">
+                    <input class="form-control" id="penulis" name="penulis" required>
                 </div>
                 <div class="mb-3">
                     <label for="tahun" class="form-label">Tahun Rilis</label>
-                    <input class="form-control" id="tahun" name="tahun">
+                    <input class="form-control" id="tahun" name="tahun" required>
                 </div>
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-dark" name="request">Request</button>

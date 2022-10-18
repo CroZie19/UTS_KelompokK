@@ -14,11 +14,11 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
             <form action="../process/visitProcess.php" method="post" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama Pengunjung</label>
-                    <input class="form-control" id="nama" name="nama">
+                    <input class="form-control" id="nama" name="nama" required>
                 </div>
                 <div class="mb-3">
                     <label for="genre" class="form-label">Sesi</label>
-                    <select class="form-select" aria-label="Default select example" name="sesi" id="sesi">
+                    <select class="form-select" aria-label="Default select example" name="sesi" id="sesi" required>
                     <option value="" disabled selected hidden>Pilih Sesi</option>
                         <option value="Sesi 1 (08.00-10.30)">Sesi 1 (08.00-10.30)</option>
                         <option value="Sesi 2 (11.00-13.30)">Sesi 2 (11.00-13.30)</option>
@@ -27,7 +27,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                 </div>
                 <div class="mb-3" style="width: 500px;">
                     <label for="exampleInputTanggalPengembalian" class="form-label">Tanggal</label>
-                    <input type="date" class="form-control" id="tanggal" name="tanggal" aria-describedby="tanggal">
+                    <input type="date" class="form-control" id="tanggal" name="tanggal" aria-describedby="tanggal" required>
                 </div>
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-dark" name="visit">Kunjung</button>

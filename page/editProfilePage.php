@@ -23,27 +23,27 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
     <hr>
     <form action="../process/editProfileProcess.php" method="post" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <input class="form-control" type="hidden" id="name" name="id" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["id"]; ?>">
+                            <input class="form-control" type="hidden" id="name" name="id" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["id"]; ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Foto</label>
-                            <input class="form-control" type="file" id="foto" name="foto" value="<?php echo $_SESSION["users"]["foto"]; ?>">
+                            <input class="form-control" type="file" id="foto" name="foto" value="<?php echo $_SESSION["users"]["foto"]; ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Username</label>
-                            <input class="form-control" id="username" name="username" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["username"]; ?>">
+                            <input class="form-control" id="username" name="username" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["username"]; ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" value="<?php echo $_SESSION["users"]["password"]; ?>">
+                            <input type="password" class="form-control" id="password" name="password" value="<?php echo $_SESSION["users"]["password"]; ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input class="form-control" id="email" name="email" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["email"]; ?>">
+                            <input class="form-control" id="email" name="email" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["email"]; ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Name</label>
-                            <input class="form-control" id="nama" name="nama" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["nama"]; ?>">
+                            <input class="form-control" id="nama" name="nama" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["nama"]; ?>" required>
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-dark" name="edit">Edit Profil User</button>

@@ -73,15 +73,15 @@
                 <a href="./listBookAdminPage.php" style="font-weight:600">Dashboard Admin</a>
             </div>
             <div class="content-menu " >
-                <i class="fa fa-tv"></i>
+                <i class="fa fa-book"></i>
                 <a href="./listBookPeminjamanPage.php" style="font-weight:600">List Peminjaman</a>
             </div>
             <div class="content-menu " >
-                <i class="fa fa-tv"></i>
+                <i class="fa fa-commenting"></i>
                 <a href="./listRequestPage.php" style="font-weight:600">List Request</a>
             </div>
             <div class="content-menu " >
-                <i class="fa fa-tv"></i>
+                <i class="fa fa-institution"></i>
                 <a href="./listVisitPage.php" style="font-weight:600">List Kunjungan</a>
             </div>
             <div class="content-menu " >

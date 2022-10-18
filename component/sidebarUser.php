@@ -77,11 +77,11 @@
                     <a href="../page/listPeminjamanPage.php" style="font-weight:600">List Peminjaman</a>
                 </div>
                 <div class="content-menu " >
-                    <i class="fa fa-list"></i>
+                    <i class="fa fa-commenting"></i>
                     <a href="../page/listRequestUserPage.php" style="font-weight:600">Request Buku</a>
                 </div>
                 <div class="content-menu " >
-                    <i class="fa fa-list"></i>
+                    <i class="fa fa-institution"></i>
                     <a href="../page/visitPage.php" style="font-weight:600">Kunjungan</a>
                 </div>
                 <div class="content-menu " >

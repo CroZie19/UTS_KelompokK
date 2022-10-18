@@ -26,7 +26,7 @@ solid #1e1e1c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                             <input class="form-control" type="hidden" id="name" name="id" aria-describedby="emailHelp" value="<?php echo $_SESSION["users"]["id"]; ?>" required>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Foto</label>
+                            <img src="../foto/<?php echo $_SESSION["users"]["foto"]; ?>" style = "width:20%" >
                             <input class="form-control" type="file" id="foto" name="foto" value="<?php echo $_SESSION["users"]["foto"]; ?>" required>
                         </div>
                         <div class="mb-3">
